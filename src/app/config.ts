@@ -1,3 +1,3 @@
 export default {
-    BASE_URL: process.env.NEXT_PUBLIC_BASE_URL,
+    BASE_URL: process.env.NEXT_PUBLIC_BASE_URL || "https://feedback-sentiment-analysis.onrender.com",
 };
