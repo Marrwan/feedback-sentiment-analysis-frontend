@@ -1,0 +1,64 @@
+/* form.module.css */
+.feedbackForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    max-width: 500px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s;
+    animation: formPop 0.6s ease;
+}
+
+@keyframes formPop {
+    0% { transform: scale(0); }
+    80% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+.feedbackForm:hover {
+    transform: scale(1.05);
+}
+
+.feedbackForm h1 {
+    color: #f56b84;
+    font-size: 2rem;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+    margin-bottom: 1rem;
+}
+
+.feedbackForm textarea {
+    width: 100%;
+    height: 150px;
+    margin: 1rem 0;
+    padding: 1rem;
+    border-radius: 10px;
+    border: 2px solid #f56b84;
+    outline: none;
+    font-size: 1.1rem;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    transition: background 0.2s;
+}
+
+.feedbackForm textarea:focus {
+    background: #ffe6ea;
+}
+
+.feedbackForm button {
+    background: #f56b84;
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s, transform 0.2s;
+}
+
+.feedbackForm button:hover {
+    background: #d94a6d;
+    transform: translateY(-2px);
+}
